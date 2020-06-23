@@ -31,7 +31,7 @@
   font-size: 18px;
 }
 
-.about {
+#home-about {
   position: absolute;
   top: 135%;
   width: 70%;
@@ -48,27 +48,8 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .title-header h1 {
-    font-size: 54px;
-  }
-
-  .title-header p {
-    font-size: 20px;
-  }
-
-  .about {
-    width: 95%;
-    top: 130%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-/* Laptop */
-
-@media (max-width: 767px) {
-  #header img {
+@media only screen and (max-width: 767px) {
+  #home img {
     height: 480px;
     object-fit: cover;
     object-position: left;
@@ -82,6 +63,25 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .title-header h1 {
+    font-size: 54px;
+  }
+
+  .title-header p {
+    font-size: 20px;
+  }
+
+  #home-about {
+    width: 95%;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Laptop */
+
 @media (min-width: 1024px) {
   .title-header h1 {
     font-size: 72px;
@@ -91,9 +91,9 @@
     font-size: 35px;
   }
 
-  .about {
+  #home-about {
     width: 70%;
-    top: 120%;
+    top: 115%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -110,7 +110,7 @@
     font-size: 35px;
   }
 
-  .about {
+  #home-about {
     width: 50%;
     top: 90%;
     left: 50%;
