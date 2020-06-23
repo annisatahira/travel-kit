@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+@font-face {
+  font-family: league-spartan;
+  src: url("../../fonts/leaguespartan-bold.woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#header {
+  background: white;
+  position: relative;
+}
+
+#header img {
+  width: 100%;
+}
+
+.title-header {
+  position: absolute;
+  top: 10%;
+  width: 30%;
+}
+
+.title-header h1 {
+  font-size: 36px;
+  font-family: league-spartan, Arial, Helvetica, sans-serif;
+}
+
+.title-header p {
+  font-family: "Scheherazade", serif;
+  font-size: 18px;
+}
+
+.about {
+  position: absolute;
+  top: 135%;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  border-radius: 25px;
+}
+
+.card-title {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-header h1 {
+    font-size: 54px;
+  }
+
+  .title-header p {
+    font-size: 20px;
+  }
+
+  .about {
+    width: 95%;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Laptop */
+
+@media (max-width: 767px) {
+  #header img {
+    height: 480px;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .title-header {
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .title-header h1 {
+    font-size: 72px;
+  }
+
+  .title-header p {
+    font-size: 35px;
+  }
+
+  .about {
+    width: 70%;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Ekstra large screen */
+
+@media (min-width: 1200px) {
+  .title-header h1 {
+    font-size: 72px;
+  }
+
+  .title-header p {
+    font-size: 35px;
+  }
+
+  .about {
+    width: 50%;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

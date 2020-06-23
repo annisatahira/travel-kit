@@ -1,0 +1,26 @@
+nav a {
+  color: black;
+}
+
+nav li a {
+  color: black;
+}
+
+nav img {
+  padding-top: 5px;
+  width: 150px;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    height: 72px;
+  }
+  nav li a {
+    padding-top: 25px;
+  }
+
+  nav img {
+    padding-top: 30px;
+  }
+}
