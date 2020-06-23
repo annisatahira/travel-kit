@@ -1,2 +1,6 @@
 @import "./components/navbar.css";
 @import "./components/header.css";
+
+* {
+  box-sizing: border-box;
+}

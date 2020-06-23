@@ -6,10 +6,6 @@
   src: url("../../fonts/leaguespartan-bold.woff");
 }
 
-* {
-  box-sizing: border-box;
-}
-
 #header {
   background: white;
   position: relative;

@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       }
     };
-    xhttp.open("GET", "components/" + page + ".html", true);
+    xhttp.open("GET", "src/components/" + page + ".html", true);
     xhttp.send();
   }
 });
