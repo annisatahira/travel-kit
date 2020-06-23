@@ -6,12 +6,12 @@
   src: url("../../fonts/leaguespartan-bold.woff");
 }
 
-#header {
+#home {
   background: white;
   position: relative;
 }
 
-#header img {
+#home img {
   width: 100%;
 }
 
