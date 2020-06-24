@@ -1,9 +1,27 @@
-let CACHE_NAME = "travel-kit";
+const CACHE_NAME = "travel-kit-app-1.0.0.0";
 var urlsToCache = [
   "/",
   "/index.html",
-  "/css/materialize.min.css",
-  "/js/views/materialize.min.js"
+  "/src/components/nav-menu.html",
+  "/src/components/pages/home.html",
+  "/src/components/container/list.js",
+  "/src/components/items/home-item/intro-item.js",
+  "/src/components/items/home-item/menu-item.js",
+  "/src/components/footer.js",
+  "/src/components/nav.js",
+  "/src/css/materialize.min.css",
+  "/src/css/styles.css",
+  "/src/css/components/home.css",
+  "/src/css/components/navbar.css",
+  "/src/data/data-app.js",
+  "/src/fonts/leaguespartan-bold.woff",
+  "/src/images/HOME-BG.png",
+  "/src/images/HOME-BG-2.png",
+  "/src/images/logo-fix.png",
+  "/src/images/logo.png",
+  "/src/js/views/materialize.min.js",
+  "/src/js/views/view.js",
+  "/src/js/main.js"
 ];
 
 self.addEventListener("install", function(event) {
