@@ -1,4 +1,4 @@
-class HomeItem extends HTMLElement {
+class IntroItem extends HTMLElement {
   set item(data) {
     this._data = data;
     this.render();
@@ -6,7 +6,7 @@ class HomeItem extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <div class="col s12 m4">
+    <div class="col s12 m4 l4">
         <div class="card cyan darken-2">
           <div class="card-content white-text">
             <span class="card-title">${this._data.title}</span>
@@ -19,4 +19,4 @@ class HomeItem extends HTMLElement {
   }
 }
 
-customElements.define("home-item", HomeItem);
+customElements.define("intro-item", IntroItem);

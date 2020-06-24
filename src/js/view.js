@@ -1,5 +1,6 @@
-import "../components/home-item.js";
-import { dataHome } from "../data/data-app.js";
+import "../components/container/home-item/intro-item.js";
+import "../components/container/home-item/menu-item.js";
+import { dataIntroHome, dataMenuHome } from "../data/data-app.js";
 import List from "../components/container/list.js";
 
 const main = () => {
@@ -54,9 +55,17 @@ const main = () => {
           try {
             content.innerHTML = xhttp.responseText;
             if ((page = "home")) {
-              const elementHome = document.querySelector("#home-about");
-              const listHome = new List(elementHome, "home-item", dataHome);
-              listHome.render();
+              const elementIntro = document.querySelector("#home-intro");
+              const listIntro = new List(
+                elementIntro,
+                "intro-item",
+                dataIntroHome
+              );
+              listIntro.render();
+
+              const elementMenu = document.querySelector("#home-menu-item");
+              const listMenu = new List(elementMenu, "menu-item", dataMenuHome);
+              listMenu.render();
             }
           } catch (error) {}
         } else if (this.status == 404) {
