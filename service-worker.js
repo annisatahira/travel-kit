@@ -1,9 +1,9 @@
-const CACHE_NAME = "travel-kit";
+let CACHE_NAME = "travel-kit";
 var urlsToCache = [
   "/",
   "/index.html",
   "/css/materialize.min.css",
-  "/js/materialize.min.js"
+  "/js/views/materialize.min.js"
 ];
 
 self.addEventListener("install", function(event) {

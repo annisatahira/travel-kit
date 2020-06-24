@@ -1,7 +1,9 @@
-import "../components/container/home-item/intro-item.js";
-import "../components/container/home-item/menu-item.js";
-import { dataIntroHome, dataMenuHome } from "../data/data-app.js";
-import List from "../components/container/list.js";
+import "../../components/nav.js";
+import "../../components/footer.js";
+import "../../components/items/home-item/intro-item.js";
+import "../../components/items/home-item/menu-item.js";
+import { dataIntroHome, dataMenuHome } from "../../data/data-app.js";
+import List from "../../components/container/list.js";
 
 const main = () => {
   // Activate sidebar nav
@@ -26,7 +28,7 @@ const main = () => {
           .forEach(function(elm) {
             elm.addEventListener("click", function(event) {
               // Tutup sidenav
-              var sidenav = document.querySelector(".sidenav");
+              const sidenav = document.querySelector(".sidenav");
               M.Sidenav.getInstance(sidenav).close();
 
               // Muat konten halaman yang dipanggil
@@ -36,7 +38,7 @@ const main = () => {
           });
       }
     };
-    xhttp.open("GET", "nav.html", true);
+    xhttp.open("GET", "src/components/nav-menu.html", true);
     xhttp.send();
   }
 
@@ -76,7 +78,7 @@ const main = () => {
       }
     };
 
-    xhttp.open("GET", "src/components/" + page + ".html", true);
+    xhttp.open("GET", "src/components/pages/" + page + ".html", true);
     xhttp.send();
   }
 };
