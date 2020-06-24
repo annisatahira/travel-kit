@@ -42,7 +42,7 @@ h1 {
 
 #home-intro {
   position: absolute;
-  top: 25%;
+  top: 10%;
   width: 70%;
 }
 
@@ -66,7 +66,7 @@ h1 {
 }
 
 #home-menu-title {
-  top: 85%;
+  top: 38%;
   position: absolute;
 }
 
@@ -79,7 +79,7 @@ h1 {
 
 #home-menu-item {
   position: absolute;
-  top: 155%;
+  top: 70%;
 }
 
 #home-menu-item .card {
@@ -123,6 +123,10 @@ h1 {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  #home-featured {
+    height: 1500px;
   }
 }
 
@@ -200,8 +204,22 @@ h1 {
 
   #home-intro {
     width: 50%;
-    top: 90%;
+    top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  #home-menu-title {
+    top: 30%;
+  }
+
+  #home-menu-item {
+    top: 60%;
+    width: 60%;
+  }
+}
+
+.page-footer {
+  background: #03989e; /* fallback for old browsers */
+  font-family: "Hammersmith One", sans-serif;
 }
