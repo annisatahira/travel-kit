@@ -42,7 +42,7 @@ h1 {
 
 #home-intro {
   position: absolute;
-  top: 135%;
+  top: 25%;
   width: 70%;
 }
 
@@ -57,32 +57,29 @@ h1 {
 
 #home-featured {
   position: relative;
-  width: 100%;
   background-image: url("../../images/HOME-BG-2.png");
   background-size: 100%;
+  background-position: left;
   height: 720px;
   background-repeat: no-repeat;
   color: black;
 }
 
 #home-menu-title {
-  top: 35%;
+  top: 85%;
   position: absolute;
-  text-align: center;
 }
 
 #home-menu-title h1 {
-  font-size: 32px;
+  font-size: 25px;
 }
 #home-menu-title p {
-  line-height: 0.2;
   font-size: 15px;
 }
 
 #home-menu-item {
   position: absolute;
-  top: 65%;
-  width: 80%;
+  top: 155%;
 }
 
 #home-menu-item .card {
@@ -140,9 +137,18 @@ h1 {
 
   #home-intro {
     width: 95%;
-    top: 115%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  #home-menu-title {
+    top: 35%;
+  }
+
+  #home-menu-item {
+    top: 65%;
+    width: 95%;
   }
 }
 
@@ -160,6 +166,24 @@ h1 {
   #home-intro {
     width: 70%;
     top: 10%;
+  }
+
+  #home-menu-item {
+    top: 65%;
+    width: 80%;
+  }
+
+  #home-menu-title {
+    top: 35%;
+    text-align: center;
+  }
+
+  #home-menu-title h1 {
+    font-size: 32px;
+  }
+  #home-menu-title p {
+    line-height: 0.2;
+    font-size: 15px;
   }
 }
 
