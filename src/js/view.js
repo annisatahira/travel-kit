@@ -4,12 +4,12 @@ import List from "../components/container/list.js";
 
 const main = () => {
   // Activate sidebar nav
-  var elems = document.querySelectorAll(".sidenav");
+  const elems = document.querySelectorAll(".sidenav");
   M.Sidenav.init(elems);
   loadNav();
 
   function loadNav() {
-    var xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4) {
         if (this.status != 200) return;
@@ -53,13 +53,11 @@ const main = () => {
         if (this.status == 200) {
           try {
             content.innerHTML = xhttp.responseText;
-
-            const a = document.querySelector("#home-about");
-            console.log(a);
-            const b = new List(a, "home-item", dataHome);
-            b.render();
-
-            console.log(b);
+            if ((page = "home")) {
+              const elementHome = document.querySelector("#home-about");
+              const listHome = new List(elementHome, "home-item", dataHome);
+              listHome.render();
+            }
           } catch (error) {}
         } else if (this.status == 404) {
           content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
