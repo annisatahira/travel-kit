@@ -1,0 +1,73 @@
+#travel-header {
+  position: relative;
+  background: white;
+}
+
+#travel img {
+  width: 100%;
+}
+
+#travel-header .title-header {
+  position: absolute;
+  width: 30%;
+  top: 25%;
+}
+
+#travel-header .title-header h1 {
+  font-size: 36px;
+}
+
+#travel-list .card {
+  border-radius: 25px;
+  height: 300px;
+  border-top-style: dashed;
+  border-color: palevioletred;
+}
+
+#travel-list .card .card-content {
+  text-align: center;
+}
+
+#travel-list .card .card-content h2 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted black;
+}
+
+@media only screen and (max-width: 767px) {
+  #travel-header img {
+    height: 480px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  #travel-header .title-header {
+    color: white;
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #travel-header .title-header {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 30%;
+  }
+
+  #travel-header .title-header h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #travel-header .title-header h1 {
+    font-size: 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #travel-header .title-header {
+    top: 40%;
+  }
+}

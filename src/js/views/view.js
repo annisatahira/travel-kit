@@ -2,7 +2,12 @@ import "../../components/nav.js";
 import "../../components/footer.js";
 import "../../components/items/home-item/intro-item.js";
 import "../../components/items/home-item/menu-item.js";
-import { dataIntroHome, dataMenuHome } from "../../data/data-app.js";
+import "../../components/items/travel-item/list-item.js";
+import {
+  dataIntroHome,
+  dataMenuHome,
+  dataListTravel
+} from "../../data/data-app.js";
 import List from "../../components/container/list.js";
 
 const main = () => {
@@ -56,7 +61,7 @@ const main = () => {
         if (this.status == 200) {
           try {
             content.innerHTML = xhttp.responseText;
-            if ((page = "home")) {
+            if (page == "home") {
               const elementIntro = document.querySelector("#home-intro");
               const listIntro = new List(
                 elementIntro,
@@ -68,6 +73,16 @@ const main = () => {
               const elementMenu = document.querySelector("#home-menu-item");
               const listMenu = new List(elementMenu, "menu-item", dataMenuHome);
               listMenu.render();
+            }
+            if (page == "travel-list") {
+              const elementTravel = document.querySelector("#travel-list");
+              console.log(elementTravel);
+              const listTravel = new List(
+                elementTravel,
+                "list-item",
+                dataListTravel
+              );
+              listTravel.render();
             }
           } catch (error) {}
         } else if (this.status == 404) {

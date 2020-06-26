@@ -7,7 +7,7 @@ class Nav extends HTMLElement {
     this.innerHTML = `
     <nav class="transparent" role="navigation">
     <div class="nav-wrapper container">
-      <a href="#" class="brand-logo" id="logo-container"
+      <a href="#home.html" class="brand-logo" id="logo-container"
         ><img src="./src/images/logo-fix.png"
       /></a>
       <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
