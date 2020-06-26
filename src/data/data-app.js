@@ -93,6 +93,16 @@ const dataListTravel = [
     list3: "Water Bottle",
     list4: "Milk",
     list5: "Candy",
+    list6: "Chocolate",
+    list7: ""
+  },
+  {
+    title: "Others",
+    list1: "Sun Glasses",
+    list2: "Mini Bag",
+    list3: "Umbrella",
+    list4: "Mask",
+    list5: "Gloves",
     list6: "",
     list7: ""
   }
