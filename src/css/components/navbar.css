@@ -1,3 +1,12 @@
+nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+nav a {
+  color: black;
+}
+
 nav li a {
   color: black;
 }

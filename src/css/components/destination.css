@@ -1,49 +1,59 @@
-.destination-header {
-  position: relative;
-  background: white;
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+
+#destination .container {
+  width: 90%;
 }
 
-.destination-header img {
-  width: 100%;
-}
-
-.destination-header .title-header {
-  top: 20%;
-}
-
-.place-list {
-  max-width: 1200px;
+#destination .title-destination {
+  max-width: 50%;
   margin: 0 auto;
-  margin-bottom: 10px;
-  columns: 2;
-  column-gap: 10px;
+  background: white;
+  text-align: center;
 }
 
-.place-list .card {
+#destination .title-destination h1 {
+  font-size: 54px;
+  font-family: playlist-script, Arial, Helvetica, sans-serif;
+}
+
+#destination .title-destination p {
+  font-family: Sanchez, Arial, Helvetica, sans-serif;
+}
+
+#destination-choices .card .card-image img {
+  height: 400px;
+}
+
+#destination-choices .card .card-title {
+  font-family: Sanchez, Arial, Helvetica, sans-serif;
+  color: grey;
+  font-weight: bold;
+}
+
+#destination-choices .card {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#destination-list h1 {
+  font-size: 48px;
+  font-family: playlist-script, Arial, Helvetica, sans-serif;
+}
+#place-item {
+  position: relative;
+  margin-bottom: 100px;
+}
+#destination-list #place-item h2 {
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  transform: rotate(-90deg);
+  position: absolute;
+  margin-left: -10%;
+  bottom: 25%;
+  color: grey;
+}
+
+#destination-list #place-item img {
   width: 100%;
-  margin: 0 0 10px;
-  overflow: hidden;
-  break-inside: avoid;
-}
-
-@media only screen and (min-width: 768px) {
-  .place-list {
-    columns: 4;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .destination-header img {
-    height: 540px;
-    object-fit: cover;
-    object-position: left;
-  }
-
-  .destination-header .title-header {
-    left: 17%;
-  }
-
-  .destination-header .title-header h1 {
-    font-size: 32px;
-  }
+  height: 300px;
+  padding-left: 100px;
 }
