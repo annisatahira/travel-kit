@@ -1,7 +1,6 @@
 @import "./components/navbar.css";
 @import "./components/home.css";
-@import "./components/travel.css";
-@import "./components//travel-kit.css";
+@import "./components/travel-kit.css";
 @import "./components/destination.css";
 
 * {

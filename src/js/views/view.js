@@ -74,9 +74,8 @@ const main = () => {
             const elementMenu = document.querySelector("#home-menu-item");
             const listMenu = new List(elementMenu, "menu-item", dataMenuHome);
             listMenu.render();
-          } else if (page == "travel-list") {
+          } else if (page == "travel-kit") {
             const elementTravel = document.querySelector("#travel-list");
-            console.log(elementTravel);
             const listTravel = new List(
               elementTravel,
               "list-item",

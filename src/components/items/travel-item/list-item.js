@@ -9,7 +9,7 @@ class ListItem extends HTMLElement {
     <div class="col s12 m3 l3">
         <div class="materialboxed card">
           <div class="card-content">
-            <h1>${this._data.title}</h1>
+            <h2>${this._data.title}</h2>
             <ul>
               <li>
                 ${this._data.list1}

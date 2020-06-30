@@ -1,9 +1,11 @@
-nav a {
+nav li a {
   color: black;
 }
 
-nav li a {
-  color: black;
+nav li a:hover,
+nav li a:active {
+  color: teal;
+  background: white;
 }
 
 nav img {
