@@ -7,6 +7,16 @@
   src: url("../../fonts/leaguespartan-bold.woff");
 }
 
+@font-face {
+  font-family: playlist-script;
+  src: url("../../fonts/Playlist Script.otf");
+}
+
+@font-face {
+  font-family: glacial-indifferent;
+  src: url("../../fonts/GlacialIndifference-Regular.otf");
+}
+
 h1 {
   font-family: league-spartan, Arial, Helvetica, sans-serif;
 }
@@ -23,12 +33,6 @@ h1 {
 
 #home-header img {
   width: 100%;
-}
-
-#home-header .title-header {
-  position: absolute;
-  top: 10%;
-  width: 30%;
 }
 
 #home-header .title-header h1 {

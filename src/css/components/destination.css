@@ -1,0 +1,52 @@
+.destination-header {
+  position: relative;
+  background: white;
+}
+
+.destination-header img {
+  width: 100%;
+}
+
+.destination-header .title-header {
+  top: 20%;
+}
+
+.place-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  columns: 2;
+  column-gap: 10px;
+}
+
+.place-list .card {
+  width: 100%;
+  margin: 0 0 10px;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .place-list {
+    columns: 4;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .destination-header img {
+    height: 540px;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .destination-header .title-header {
+    left: 17%;
+  }
+
+  .destination-header .title-header h1 {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,27 @@
+.travel-kit-header {
+  background: white;
+  position: relative;
+}
+
+.travel-kit-header img {
+  width: 100%;
+}
+
+.travel-kit-header .title-header {
+  top: 25%;
+  right: 5%;
+  width: 40%;
+}
+
+.travel-kit-header .title-header h1 {
+  font-size: 54px;
+}
+
+.travel-kit-headline h2 {
+  font-family: playlist-script, Arial, Helvetica, sans-serif;
+}
+
+.travel-kit-headline h3 {
+  font-family: glacial-indifferent, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}

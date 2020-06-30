@@ -20,12 +20,13 @@
 #travel-list .card {
   border-radius: 25px;
   height: 320px;
-  border-top-style: dashed;
+  border-top-style: groove;
   border-color: palevioletred;
 }
 
 #travel-list .card .card-content {
   text-align: center;
+  padding: 15px;
 }
 
 #travel-list .card .card-content h1 {

@@ -1,7 +1,15 @@
 @import "./components/navbar.css";
 @import "./components/home.css";
 @import "./components/travel.css";
+@import "./components//travel-kit.css";
+@import "./components/destination.css";
 
 * {
   box-sizing: border-box;
+}
+
+.title-header {
+  position: absolute;
+  top: 10%;
+  width: 30%;
 }

@@ -7,7 +7,7 @@ class ListItem extends HTMLElement {
   render() {
     this.innerHTML = `
     <div class="col s12 m3 l3">
-        <div class="card">
+        <div class="materialboxed card">
           <div class="card-content">
             <h1>${this._data.title}</h1>
             <ul>

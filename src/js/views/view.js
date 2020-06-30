@@ -3,20 +3,23 @@ import "../../components/footer.js";
 import "../../components/items/home-item/intro-item.js";
 import "../../components/items/home-item/menu-item.js";
 import "../../components/items/travel-item/list-item.js";
+import "../../components/items/destination-item/place-item.js";
 import {
   dataIntroHome,
   dataMenuHome,
-  dataListTravel
+  dataListTravel,
+  dataListPlace
 } from "../../data/data-app.js";
 import List from "../../components/container/list.js";
 
 const main = () => {
   // Activate sidebar nav
-  const elems = document.querySelectorAll(".sidenav");
-  M.Sidenav.init(elems);
-  loadNav();
+  const elemsNav = document.querySelectorAll(".sidenav");
+  M.Sidenav.init(elemsNav);
 
-  function loadNav() {
+  //Activate carousel
+
+  const loadNav = () => {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4) {
@@ -45,46 +48,80 @@ const main = () => {
     };
     xhttp.open("GET", "src/components/nav-menu.html", true);
     xhttp.send();
-  }
+  };
 
-  // Load page content
-  let page = window.location.hash.substr(1);
-  if (page == "") page = "home";
-  loadPage(page);
+  loadNav();
 
-  function loadPage(page) {
+  const loadPlaces = () => {};
+
+  const loadPage = page => {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4) {
         const content = document.querySelector("#body-content");
 
         if (this.status == 200) {
-          try {
-            content.innerHTML = xhttp.responseText;
-            if (page == "home") {
-              const elementIntro = document.querySelector("#home-intro");
-              const listIntro = new List(
-                elementIntro,
-                "intro-item",
-                dataIntroHome
-              );
-              listIntro.render();
+          content.innerHTML = xhttp.responseText;
+          if (page == "home") {
+            const elementIntro = document.querySelector("#home-intro");
+            const listIntro = new List(
+              elementIntro,
+              "intro-item",
+              dataIntroHome
+            );
+            listIntro.render();
 
-              const elementMenu = document.querySelector("#home-menu-item");
-              const listMenu = new List(elementMenu, "menu-item", dataMenuHome);
-              listMenu.render();
-            }
-            if (page == "travel-list") {
-              const elementTravel = document.querySelector("#travel-list");
-              console.log(elementTravel);
-              const listTravel = new List(
-                elementTravel,
-                "list-item",
-                dataListTravel
-              );
-              listTravel.render();
-            }
-          } catch (error) {}
+            const elementMenu = document.querySelector("#home-menu-item");
+            const listMenu = new List(elementMenu, "menu-item", dataMenuHome);
+            listMenu.render();
+          } else if (page == "travel-list") {
+            const elementTravel = document.querySelector("#travel-list");
+            console.log(elementTravel);
+            const listTravel = new List(
+              elementTravel,
+              "list-item",
+              dataListTravel
+            );
+            listTravel.render();
+
+            var elemss = document.querySelectorAll(".materialboxed");
+            var optionss = {
+              inDuration: 200
+            };
+            M.Materialbox.init(elemss, optionss);
+          } else if (page == "destination") {
+            // const displayPlace = async () => {
+            //   try {
+            //     await displayListPlace();
+            //     carousel();
+            //   } catch (error) {}
+            // };
+            // const displayListPlace = () => {
+            //   const elementPlace = document.querySelector("#place-list");
+            //   const listPlace = new List(
+            //     elementPlace,
+            //     "place-item",
+            //     dataListPlace
+            //   );
+            //   listPlace.render();
+            // };
+            // const carousel = () => {
+            //   //Carousel initialization
+            //   const options = {
+            //     numVisible: 3,
+            //     duration: 200,
+            //     indicators: true
+            //   };
+            //   const elems = document.querySelectorAll(".carousel");
+            //   M.Carousel.init(elems, options);
+            // };
+            // displayPlace();
+            var elemss = document.querySelectorAll(".materialboxed");
+            var optionss = {
+              inDuration: 200
+            };
+            M.Materialbox.init(elemss, optionss);
+          }
         } else if (this.status == 404) {
           content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
         } else {
@@ -95,7 +132,12 @@ const main = () => {
 
     xhttp.open("GET", "src/components/pages/" + page + ".html", true);
     xhttp.send();
-  }
+  };
+
+  // Load page content
+  let page = window.location.hash.substr(1);
+  if (page == "") page = "home";
+  loadPage(page);
 };
 
 export default main();
