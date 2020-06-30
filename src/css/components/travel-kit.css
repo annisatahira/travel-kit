@@ -1,27 +1,91 @@
-.travel-kit-header {
+#travel-kit .container {
+  width: 90%;
+}
+
+#travel-kit-header {
   background: white;
   position: relative;
 }
 
-.travel-kit-header img {
+/* Travel Kit Header */
+#travel-kit-header img {
   width: 100%;
 }
 
-.travel-kit-header .title-header {
+#travel-kit-header .title-header {
   top: 25%;
   right: 5%;
   width: 40%;
 }
 
-.travel-kit-header .title-header h1 {
+#travel-kit-header .title-header h1 {
   font-size: 54px;
 }
 
-.travel-kit-headline h2 {
+/* Travel Kit Headline */
+
+#travel-kit-headline h2 {
   font-family: playlist-script, Arial, Helvetica, sans-serif;
 }
 
-.travel-kit-headline h3 {
+#travel-kit-headline h3 {
   font-family: glacial-indifferent, Arial, Helvetica, sans-serif;
   font-size: 20px;
+}
+
+/* Travel Kit Items */
+#travel-kit-items {
+  text-align: center;
+}
+#travel-kit-items img {
+  height: 250px;
+}
+
+/* Travel Kit Item */
+.travel-kit-item {
+  position: relative;
+}
+
+.travel-kit-item h4 {
+  position: absolute;
+  font-family: playlist-script, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  background: rgb(209, 53, 53);
+  color: white;
+  padding: 20px;
+}
+
+.travel-kit-item:nth-child(2) h4,
+.travel-kit-item:nth-child(2) p {
+  background: rgb(228, 181, 52);
+}
+
+.travel-kit-item:nth-child(3) h4,
+.travel-kit-item:nth-child(3) p {
+  background: rgb(60, 175, 131);
+}
+
+.travel-kit-item p {
+  position: absolute;
+  width: 300px;
+  background: rgb(209, 53, 53);
+  color: white;
+  padding: 10px;
+  margin-top: 20%;
+  margin-left: 4%;
+}
+
+@media (min-width: 768px) {
+  #travel-kit-headline {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #travel-kit-headline {
+    margin-bottom: 50px;
+  }
+  #travel-kit-items img {
+    height: 350px;
+  }
 }
