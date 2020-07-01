@@ -3,21 +3,25 @@
 #tips h1 {
   text-align: center;
   padding: 40px;
+  font-size: 35px;
 }
 
 .tips-item {
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+}
+
+.tips-item .img-center {
+  text-align: center;
 }
 
 #tips .tips-item img {
-  width: 500px;
+  width: 300px;
 }
 
 #tips .tips-item h1 {
   font-family: "Yeseva One", cursive;
   font-size: 25px;
-  margin: 0;
   padding: 60px 0 0 15px;
   text-align: left;
 }
@@ -35,6 +39,71 @@
 #tips .tips-item p {
   font-size: 15px;
   text-align: justify;
-  width: 80%;
-  padding-left: 15px;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  #tips h1 {
+    padding: 40px 200px;
+  }
+
+  #tips .tips-item img {
+    width: 350px;
+  }
+
+  #tips .tips-item h1 {
+    margin: 0;
+  }
+
+  #tips .tips-item p {
+    width: 90%;
+    padding: 0 0 0 15px;
+  }
+
+  .tips-item {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #tips h1 {
+    font-size: 45px;
+    padding: 60px 300px;
+  }
+
+  #tips .tips-item img {
+    width: 450px;
+  }
+
+  #tips .tips-item p {
+    width: 80%;
+  }
+
+  #tips .tips-item h1 {
+    font-size: 35px;
+    width: 80%;
+  }
+
+  .tips-item {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #tips h1 {
+    font-size: 55px;
+    padding: 80px 300px;
+  }
+
+  #tips-list {
+    max-width: 90%;
+  }
+
+  .tips-item {
+    margin-bottom: 150px;
+  }
+
+  #tips .tips-item span {
+    margin-top: -6%;
+  }
 }
