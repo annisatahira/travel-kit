@@ -18,7 +18,7 @@
 }
 
 h1 {
-  font-family: playlist-script, Arial, Helvetica, sans-serif;
+  font-family: league-spartan, Arial, Helvetica, sans-serif;
 }
 
 .center {
@@ -36,7 +36,7 @@ h1 {
 }
 
 #home-header .title-header h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 #home-header .title-header p {
@@ -92,17 +92,9 @@ h1 {
   height: 220px;
   text-align: center;
   border-radius: 50%;
-  background: #ff66c4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #03989e,
-    #ff66c4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #03989e,
-    #ff66c4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff66c4;
+  background: -webkit-linear-gradient(to top, #03989e, #ff66c4);
+  background: linear-gradient(to top, #03989e, #ff66c4);
   font-family: "Hammersmith One", sans-serif;
 }
 
@@ -135,6 +127,10 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
+  #home-header .title-header {
+    padding-left: 5%;
+  }
+
   #home-header .title-header h1 {
     font-size: 54px;
   }
@@ -206,6 +202,10 @@ h1 {
     font-size: 35px;
   }
 
+  #home-featured {
+    height: 500px;
+  }
+
   #home-intro {
     width: 50%;
     top: -20%;
@@ -215,16 +215,11 @@ h1 {
   }
 
   #home-menu-title {
-    top: 8%;
+    top: 18%;
   }
 
   #home-menu-item {
-    top: 40%;
+    top: 60%;
     width: 60%;
   }
-}
-
-.page-footer {
-  background: #03989e; /* fallback for old browsers */
-  font-family: "Hammersmith One", sans-serif;
 }

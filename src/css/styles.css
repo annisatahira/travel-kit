@@ -11,5 +11,9 @@
 .title-header {
   position: absolute;
   top: 10%;
-  width: 30%;
+  width: 35%;
+}
+.page-footer {
+  background: #03989e; /* fallback for old browsers */
+  font-family: "Hammersmith One", sans-serif;
 }
