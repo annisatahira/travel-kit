@@ -2,6 +2,7 @@ import "../../components/nav.js";
 import "../../components/footer.js";
 import "../../components/items/home-item/intro-item.js";
 import "../../components/items/home-item/menu-item.js";
+import "../../components/items/travel-item/kit-intro.js";
 import "../../components/items/travel-item/list-item.js";
 import "../../components/items/destination-item/place-item.js";
 import {
@@ -11,6 +12,7 @@ import {
   dataListPlace
 } from "../../data/data-app.js";
 import List from "../../components/container/list.js";
+import { introItems } from "../../data/travel-kit.js";
 
 const main = () => {
   // Activate sidebar nav
@@ -75,6 +77,10 @@ const main = () => {
             const listMenu = new List(elementMenu, "menu-item", dataMenuHome);
             listMenu.render();
           } else if (page == "travel-kit") {
+            const elmIntroKit = document.querySelector("#travel-kit-intro");
+            const introKitList = new List(elmIntroKit, "kit-intro", introItems);
+            introKitList.render();
+
             const elementTravel = document.querySelector("#travel-list");
             const listTravel = new List(
               elementTravel,

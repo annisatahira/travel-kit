@@ -37,11 +37,11 @@
 }
 
 /* Travel Kit Items */
-#travel-kit-items {
+#travel-kit-intro {
   text-align: center;
   padding-bottom: 0;
 }
-#travel-kit-items img {
+#travel-kit-intro img {
   height: 250px;
 }
 
@@ -59,13 +59,13 @@
   padding: 20px;
 }
 
-.travel-kit-item:nth-child(2) h4,
-.travel-kit-item:nth-child(2) p {
+#travel-kit-intro kit-intro:nth-child(2) h4,
+#travel-kit-intro kit-intro:nth-child(2) p {
   background: rgb(228, 181, 52);
 }
 
-.travel-kit-item:nth-child(3) h4,
-.travel-kit-item:nth-child(3) p {
+#travel-kit-intro kit-intro:nth-child(3) h4,
+#travel-kit-intro kit-intro:nth-child(3) p {
   background: rgb(60, 175, 131);
 }
 
@@ -131,7 +131,7 @@ list-item ul li {
     text-align: center;
   }
 
-  #travel-kit-items img {
+  #travel-kit-intro img {
     margin-bottom: 30px;
   }
 }
@@ -158,7 +158,7 @@ list-item ul li {
     width: 200px;
   }
 
-  #travel-kit-items img {
+  #travel-kit-intro img {
     height: 180px;
   }
 
@@ -176,13 +176,13 @@ list-item ul li {
     font-size: 15px;
   }
 
-  #travel-kit-items {
+  #travel-kit-intro {
     padding-bottom: 50px;
   }
 }
 
 @media (min-width: 1024px) {
-  #travel #travel-kit-items {
+  #travel #travel-kit-intro {
     padding-bottom: 50px;
   }
   #travel-kit-header .title-header h1 {
@@ -193,7 +193,7 @@ list-item ul li {
     margin-bottom: 50px;
   }
 
-  #travel-kit-items img {
+  #travel-kit-intro img {
     height: 250px;
   }
 
@@ -211,7 +211,7 @@ list-item ul li {
     margin-bottom: 50px;
   }
 
-  #travel-kit-items img {
+  #travel-kit-intro img {
     height: 300px;
   }
 
