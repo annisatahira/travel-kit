@@ -5,10 +5,11 @@ import "../../components/items/home-item/menu-item.js";
 import "../../components/items/travel-item/kit-intro.js";
 import "../../components/items/travel-item/list-item.js";
 import "../../components/items/destination-item/destination-item.js";
+import "../../components/items/destination-item/season-item.js";
 import { dataIntroHome, dataMenuHome } from "../../data/data-app.js";
 import { introItems, listTravel } from "../../data/travel-kit.js";
 import List from "../../components/container/list.js";
-import { listDestination } from "../../data/destination.js";
+import { listDestination, listSeason } from "../../data/destination.js";
 
 const main = () => {
   // Activate sidebar nav
@@ -79,6 +80,12 @@ const main = () => {
             const travelList = new List(elementTravel, "list-item", listTravel);
             travelList.render();
           } else if (page == "destination") {
+            const elmSeason = document.querySelector(
+              "#destination-season-list"
+            );
+            const seasonList = new List(elmSeason, "season-item", listSeason);
+            seasonList.render();
+
             const elmDestination = document.querySelector(
               "#destination-list-item"
             );
