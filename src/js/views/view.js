@@ -8,11 +8,10 @@ import "../../components/items/destination-item/place-item.js";
 import {
   dataIntroHome,
   dataMenuHome,
-  dataListTravel,
   dataListPlace
 } from "../../data/data-app.js";
+import { introItems, listTravel } from "../../data/travel-kit.js";
 import List from "../../components/container/list.js";
-import { introItems } from "../../data/travel-kit.js";
 
 const main = () => {
   // Activate sidebar nav
@@ -82,12 +81,8 @@ const main = () => {
             introKitList.render();
 
             const elementTravel = document.querySelector("#travel-list");
-            const listTravel = new List(
-              elementTravel,
-              "list-item",
-              dataListTravel
-            );
-            listTravel.render();
+            const travelList = new List(elementTravel, "list-item", listTravel);
+            travelList.render();
 
             var elemss = document.querySelectorAll(".materialboxed");
             var optionss = {
