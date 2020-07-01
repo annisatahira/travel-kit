@@ -130,6 +130,10 @@ list-item ul li {
   #travel-kit-headline h2 {
     text-align: center;
   }
+
+  #travel-kit-items img {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -208,7 +212,7 @@ list-item ul li {
   }
 
   #travel-kit-items img {
-    height: 350px;
+    height: 300px;
   }
 
   .travel-kit-item p {
