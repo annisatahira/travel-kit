@@ -4,14 +4,11 @@ import "../../components/items/home-item/intro-item.js";
 import "../../components/items/home-item/menu-item.js";
 import "../../components/items/travel-item/kit-intro.js";
 import "../../components/items/travel-item/list-item.js";
-import "../../components/items/destination-item/place-item.js";
-import {
-  dataIntroHome,
-  dataMenuHome,
-  dataListPlace
-} from "../../data/data-app.js";
+import "../../components/items/destination-item/destination-item.js";
+import { dataIntroHome, dataMenuHome } from "../../data/data-app.js";
 import { introItems, listTravel } from "../../data/travel-kit.js";
 import List from "../../components/container/list.js";
+import { listDestination } from "../../data/destination.js";
 
 const main = () => {
   // Activate sidebar nav
@@ -53,8 +50,6 @@ const main = () => {
 
   loadNav();
 
-  const loadPlaces = () => {};
-
   const loadPage = page => {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -83,39 +78,17 @@ const main = () => {
             const elementTravel = document.querySelector("#travel-list");
             const travelList = new List(elementTravel, "list-item", listTravel);
             travelList.render();
-
-            var elemss = document.querySelectorAll(".materialboxed");
-            var optionss = {
-              inDuration: 200
-            };
-            M.Materialbox.init(elemss, optionss);
           } else if (page == "destination") {
-            // const displayPlace = async () => {
-            //   try {
-            //     await displayListPlace();
-            //     carousel();
-            //   } catch (error) {}
-            // };
-            // const displayListPlace = () => {
-            //   const elementPlace = document.querySelector("#place-list");
-            //   const listPlace = new List(
-            //     elementPlace,
-            //     "place-item",
-            //     dataListPlace
-            //   );
-            //   listPlace.render();
-            // };
-            // const carousel = () => {
-            //   //Carousel initialization
-            //   const options = {
-            //     numVisible: 3,
-            //     duration: 200,
-            //     indicators: true
-            //   };
-            //   const elems = document.querySelectorAll(".carousel");
-            //   M.Carousel.init(elems, options);
-            // };
-            // displayPlace();
+            const elmDestination = document.querySelector(
+              "#destination-list-item"
+            );
+            const destinationList = new List(
+              elmDestination,
+              "destination-item",
+              listDestination
+            );
+            destinationList.render();
+
             var elemss = document.querySelectorAll(".materialboxed");
             var optionss = {
               inDuration: 200

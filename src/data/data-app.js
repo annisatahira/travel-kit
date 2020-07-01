@@ -25,37 +25,4 @@ const dataMenuHome = [
   }
 ];
 
-const dataListPlace = [
-  {
-    image: "src/images/place/bangkok.jpg",
-    description: "description",
-    name: "Bangkok, Thailand"
-  },
-  {
-    image: "src/images/place/france.jpg",
-    description: "description",
-    name: "France, Thailand"
-  },
-  {
-    image: "src/images/place/australia.jpg",
-    description: "description",
-    name: "Bangkok, Thailand"
-  },
-  {
-    image: "src/images/place/british.jpg",
-    description: "description",
-    name: "France, Thailand"
-  },
-  {
-    image: "src/images/place/galway.jpg",
-    description: "description",
-    name: "Bangkok, Thailand"
-  },
-  {
-    image: "src/images/place/dubai.jpg",
-    description: "description",
-    name: "France, Thailand"
-  }
-];
-
-export { dataIntroHome, dataMenuHome, dataListPlace };
+export { dataIntroHome, dataMenuHome };
