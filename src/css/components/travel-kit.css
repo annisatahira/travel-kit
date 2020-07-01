@@ -39,7 +39,7 @@
 /* Travel Kit Items */
 #travel-kit-items {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 #travel-kit-items img {
   height: 250px;
@@ -126,6 +126,7 @@ list-item ul li {
     object-position: left;
   }
 
+  #travel-kit-list .title h1,
   #travel-kit-headline h2 {
     text-align: center;
   }
@@ -133,25 +134,79 @@ list-item ul li {
 
 @media (min-width: 768px) {
   #travel-kit-header .title-header h1 {
-    font-size: 64px;
+    font-size: 40px;
   }
   #travel-kit-header .title-header {
     right: 5%;
   }
+
+  #travel-kit h2 {
+    font-size: 40px;
+  }
   #travel-kit-headline {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .travel-kit-item p {
     margin-top: 20%;
+    margin-left: 2%;
+    width: 180px;
+    width: 200px;
+  }
+
+  #travel-kit-items img {
+    height: 180px;
+  }
+
+  #travel-list .card {
+    height: 300px;
+  }
+
+  #travel-kit #travel-list .card .card-content h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted teal;
+  }
+
+  list-item ul li {
+    font-size: 15px;
+  }
+
+  #travel-kit-items {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #travel#travel-kit-items {
+    padding-bottom: 50px;
+  }
+  -kit-header .title-header h1 {
+    font-size: 54px;
+  }
+
+  #travel-kit-headline {
+    margin-bottom: 50px;
+  }
+
+  #travel-kit-items img {
+    height: 250px;
+  }
+
+  .travel-kit-item p {
     margin-left: 4%;
+    width: 200px;
   }
 }
 
 @media (min-width: 1200px) {
+  #travel-kit-header .title-header h1 {
+    font-size: 60px;
+  }
   #travel-kit-headline {
     margin-bottom: 50px;
   }
+
   #travel-kit-items img {
     height: 350px;
   }

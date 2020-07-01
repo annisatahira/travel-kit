@@ -3,6 +3,10 @@ nav {
   box-shadow: none;
 }
 
+nav a {
+  color: black;
+}
+
 nav ul a {
   color: black;
   font-family: glacial-indifferent, Arial, Helvetica, sans-serif;
