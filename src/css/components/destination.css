@@ -22,12 +22,15 @@
 
 #destination-choices .card .card-image img {
   height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 
 #destination-choices .card .card-title {
   font-family: Sanchez, Arial, Helvetica, sans-serif;
   color: grey;
   font-weight: bold;
+  text-align: center;
 }
 
 #destination-choices .card {
@@ -38,16 +41,19 @@
 #destination-list h1 {
   font-size: 48px;
   font-family: playlist-script, Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0 0 65px 0;
 }
+
 #place-item {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 #destination-list #place-item h2 {
-  -ms-transform: rotate(-90deg); /* IE 9 */
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: absolute;
-  margin-left: -10%;
+  margin-left: -30%;
   bottom: 25%;
   color: grey;
 }
@@ -55,5 +61,83 @@
 #destination-list #place-item img {
   width: 100%;
   height: 300px;
-  padding-left: 100px;
+  padding-left: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  #destination-choices .card .card-image img {
+    height: 250px;
+  }
+
+  #destination-choices .card .card-title {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #destination .title-destination h1 {
+    font-size: 45px;
+  }
+
+  #destination-list #place-item img {
+    height: 160px;
+    padding-left: 60px;
+  }
+
+  #destination-list #place-item h2 {
+    margin-left: -15%;
+    font-size: 35px;
+  }
+
+  #place-item {
+    margin-bottom: 60px;
+  }
+
+  #destination-list h1 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  #destination-choices .card .card-image img {
+    height: 300px;
+  }
+
+  #destination .title-destination h1 {
+    font-size: 54px;
+  }
+
+  #destination-list #place-item h2 {
+    margin-left: -10%;
+  }
+
+  #destination-choices .card .card-title {
+    font-size: 24px;
+  }
+
+  #destination-list #place-item img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #destination-choices .card .card-image img {
+    height: 400px;
+  }
+
+  #destination-list #place-item img {
+    height: 300px;
+  }
+  #destination-list #place-item h2 {
+    font-size: 55px;
+  }
+
+  #destination-list #place-item img {
+    padding-left: 100px;
+  }
+
+  #place-item {
+    margin-bottom: 90px;
+  }
 }
