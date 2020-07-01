@@ -178,10 +178,10 @@ list-item ul li {
 }
 
 @media (min-width: 1024px) {
-  #travel#travel-kit-items {
+  #travel #travel-kit-items {
     padding-bottom: 50px;
   }
-  -kit-header .title-header h1 {
+  #travel-kit-header .title-header h1 {
     font-size: 54px;
   }
 
