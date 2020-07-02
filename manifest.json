@@ -1,0 +1,16 @@
+{
+  "name": "Travel Kit App",
+  "short_name": "Travel Kit",
+  "description": "Travel App Planner",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ff66c4",
+  "theme_color": "#ff66c4",
+  "icons": [
+    {
+      "src": "src/images/icon-pwa.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

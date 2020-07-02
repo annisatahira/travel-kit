@@ -1,4 +1,4 @@
-const CACHE_NAME = "travel-kit-app-1.0.0.1";
+const CACHE_NAME = "travel-kit-app-v1";
 var urlsToCache = [
   "/",
   "/index.html",
