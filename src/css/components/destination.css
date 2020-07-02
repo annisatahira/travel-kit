@@ -78,6 +78,10 @@
     margin-left: -20%;
   }
 
+  #destination-list-item destination-item:nth-child(2) #place-item h2 {
+    margin-left: -10%;
+  }
+
   #destination-list-item destination-item:nth-child(6) #place-item h2 {
     margin-left: -16%;
   }
@@ -124,6 +128,10 @@
     margin-left: -10%;
   }
 
+  #destination-list-item destination-item:nth-child(2) #place-item h2 {
+    margin-left: -5%;
+  }
+
   #destination-list-item destination-item:nth-child(6) #place-item h2 {
     margin-left: -8%;
   }
@@ -152,7 +160,9 @@
   #destination-list-item destination-item:nth-child(even) #place-item h2 {
     margin-left: -5%;
   }
-
+  #destination-list-item destination-item:nth-child(2) #place-item h2 {
+    margin-left: -1%;
+  }
   #destination-list-item destination-item:nth-child(6) #place-item h2 {
     margin-left: -3%;
   }
@@ -180,9 +190,5 @@
 
   #place-item {
     margin-bottom: 90px;
-  }
-
-  #destination-list-item destination-item:nth-child(2) #place-item h2 {
-    margin-left: -1%;
   }
 }
