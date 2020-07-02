@@ -1,5 +1,6 @@
 import "../../components/nav.js";
 import "../../components/footer.js";
+
 import "../../components/items/home-item/intro-item.js";
 import "../../components/items/home-item/menu-item.js";
 import "../../components/items/travel-item/kit-intro.js";
@@ -7,9 +8,11 @@ import "../../components/items/travel-item/list-item.js";
 import "../../components/items/destination-item/destination-item.js";
 import "../../components/items/destination-item/season-item.js";
 import "../../components/items/tips-item/tips-item.js";
+
+import List from "../../components/container/list.js";
+
 import { introHome, menuHome } from "../../data/home.js";
 import { introItems, listTravel } from "../../data/travel-kit.js";
-import List from "../../components/container/list.js";
 import { listDestination, listSeason } from "../../data/destination.js";
 import { tips } from "../../data/tips.js";
 
@@ -93,12 +96,6 @@ const main = () => {
               listDestination
             );
             destinationList.render();
-
-            var elemss = document.querySelectorAll(".materialboxed");
-            var optionss = {
-              inDuration: 200
-            };
-            M.Materialbox.init(elemss, optionss);
           } else if (page == "tips") {
             const elmTips = document.querySelector("#tips-list");
             const tipsList = new List(elmTips, "tips-item", tips);
@@ -107,7 +104,7 @@ const main = () => {
         } else if (this.status == 404) {
           content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
         } else {
-          content.innerHTML = "<p>Ups.. halaman tidak dapat diakses.</p>";
+          content.innerHTML = "<p>Yah alaman tidak dapat diakses.</p>";
         }
       }
     };

@@ -16,4 +16,4 @@ const RSW = () => {
   }
 };
 
-export default RSW;
+document.addEventListener("DOMContentLoaded", RSW);
