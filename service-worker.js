@@ -1,4 +1,4 @@
-const CACHE_NAME = "travel-kit-app-v1";
+const CACHE_NAME = "travel-kit-app-v1.0";
 var urlsToCache = [
   "/",
   "/index.html",
@@ -36,34 +36,6 @@ var urlsToCache = [
   "/src/data/destination.js",
   "/src/data/tips.js",
 
-  // "/src/fonts/leaguespartan-bold.woff",
-  // "/src/fonts/GlacialIndifference-Regular.otf",
-  // "/src/fonts/Playlist Script.otf",
-
-  // "/src/images/home/home-header.png",
-  // "/src/images/home/home-feature-bg.png",
-  // "/src/images/travel-kit/travel-kit-banner.png",
-  // "/src/images/travel-kit/travel-kit-item-01.png",
-  // "/src/images/travel-kit/travel-kit-item-02.png",
-  // "/src/images/travel-kit/travel-kit-item-03.png",
-  // "/src/images/destination/autumn.jpg",
-  // "/src/images/destination/bangkok.jpg",
-  // "/src/images/destination/british.jpg",
-  // "/src/images/destination/dubai.jpg",
-  // "/src/images/destination/france.jpg",
-  // "/src/images/destination/galway.jpg",
-  // "/src/images/destination/portlans.jpg",
-  // "/src/images/destination/spring.jpg",
-  // "/src/images/destination/summer.jpeg",
-  // "/src/images/destination/winter.jpg",
-  // "/src/images/tips/01-reading-book.png",
-  // "/src/images/tips/02-studying.png",
-  // "/src/images/tips/03-money.png",
-  // "/src/images/tips/04-carry-insurance.png",
-  // "/src/images/tips/05-gmaps.png",
-
-  // "/src/images/logo.png",
-
   "/src/js/views/materialize.min.js",
   "/src/js/views/view.js",
   "/src/js/main.js",
@@ -84,14 +56,14 @@ self.addEventListener("fetch", function(event) {
       .match(event.request, { cacheName: CACHE_NAME })
       .then(function(response) {
         if (response) {
-          // console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
+          console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
           return response;
         }
 
-        // console.log(
-        //   "ServiceWorker: Memuat aset dari server: ",
-        //   event.request.url
-        // );
+        console.log(
+          "ServiceWorker: Memuat aset dari server: ",
+          event.request.url
+        );
         return fetch(event.request);
       })
   );
