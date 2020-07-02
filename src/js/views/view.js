@@ -6,10 +6,12 @@ import "../../components/items/travel-item/kit-intro.js";
 import "../../components/items/travel-item/list-item.js";
 import "../../components/items/destination-item/destination-item.js";
 import "../../components/items/destination-item/season-item.js";
+import "../../components/items/tips-item/tips-item.js";
 import { dataIntroHome, dataMenuHome } from "../../data/data-app.js";
 import { introItems, listTravel } from "../../data/travel-kit.js";
 import List from "../../components/container/list.js";
 import { listDestination, listSeason } from "../../data/destination.js";
+import { tips } from "../../data/tips.js";
 
 const main = () => {
   // Activate sidebar nav
@@ -101,6 +103,10 @@ const main = () => {
               inDuration: 200
             };
             M.Materialbox.init(elemss, optionss);
+          } else if (page == "tips") {
+            const elmTips = document.querySelector("#tips-list");
+            const tipsList = new List(elmTips, "tips-item", tips);
+            tipsList.render();
           }
         } else if (this.status == 404) {
           content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
