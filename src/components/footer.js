@@ -17,8 +17,7 @@ class Footer extends HTMLElement {
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Inspiration and Photo</h5>
           <ul>
-            <li>Pinterest - Photo by Jim Tobeo on behance</li>
-            <li>Pinterest - Photo by Nicepage</li>
+            <li>Pinterest</li>
             <li>Canva</li>
           </ul>
         </div>
