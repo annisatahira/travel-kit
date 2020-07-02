@@ -1,4 +1,4 @@
-const dataIntroHome = [
+const introHome = [
   {
     title: "Don't forget the Essential Thing",
     description: "Choose Specific Items for Your Destination."
@@ -13,7 +13,7 @@ const dataIntroHome = [
   }
 ];
 
-const dataMenuHome = [
+const menuHome = [
   {
     title: "Travel Kit List"
   },
@@ -25,4 +25,4 @@ const dataMenuHome = [
   }
 ];
 
-export { dataIntroHome, dataMenuHome };
+export { introHome, menuHome };

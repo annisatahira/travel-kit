@@ -7,7 +7,7 @@ import "../../components/items/travel-item/list-item.js";
 import "../../components/items/destination-item/destination-item.js";
 import "../../components/items/destination-item/season-item.js";
 import "../../components/items/tips-item/tips-item.js";
-import { dataIntroHome, dataMenuHome } from "../../data/data-app.js";
+import { introHome, menuHome } from "../../data/home.js";
 import { introItems, listTravel } from "../../data/travel-kit.js";
 import List from "../../components/container/list.js";
 import { listDestination, listSeason } from "../../data/destination.js";
@@ -63,15 +63,11 @@ const main = () => {
           content.innerHTML = xhttp.responseText;
           if (page == "home") {
             const elementIntro = document.querySelector("#home-intro");
-            const listIntro = new List(
-              elementIntro,
-              "intro-item",
-              dataIntroHome
-            );
+            const listIntro = new List(elementIntro, "intro-item", introHome);
             listIntro.render();
 
             const elementMenu = document.querySelector("#home-menu-item");
-            const listMenu = new List(elementMenu, "menu-item", dataMenuHome);
+            const listMenu = new List(elementMenu, "menu-item", menuHome);
             listMenu.render();
           } else if (page == "travel-kit") {
             const elmIntroKit = document.querySelector("#travel-kit-intro");
