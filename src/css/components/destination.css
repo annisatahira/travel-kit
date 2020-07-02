@@ -33,7 +33,8 @@
   text-align: center;
 }
 
-#destination-choices .card {
+#destination-choices .card,
+#destination-list-item .card {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -179,5 +180,9 @@
 
   #place-item {
     margin-bottom: 90px;
+  }
+
+  #destination-list-item destination-item:nth-child(2) #place-item h2 {
+    margin-left: -1%;
   }
 }
